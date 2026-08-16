@@ -1,0 +1,16 @@
+metric,value
+inspection_goal_reached,True
+waypoint_reached,True
+navigation_time_s,79.99999999999973
+control_steps,800
+path_length_m,8.933343476798376
+final_position_error_m,0.6962541589989689
+final_heading_error_deg,0.06103193988543577
+minimum_obstacle_clearance_m,1.17864572609711
+collision_count,0
+average_abs_linear_velocity_m_s,0.11166679345997965
+maximum_abs_linear_velocity_m_s,1.0
+average_abs_angular_velocity_rad_s,0.04665895118268537
+maximum_abs_angular_velocity_rad_s,1.0
+average_nmpc_time_ms,306.37888175071566
+maximum_nmpc_time_ms,983.2532000145875

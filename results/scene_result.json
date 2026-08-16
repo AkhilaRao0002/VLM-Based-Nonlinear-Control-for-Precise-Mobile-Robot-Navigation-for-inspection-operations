@@ -1,0 +1,95 @@
+{
+  "task": "Inspect the target object and navigate to a suitable observation position while avoiding obstacles. Identify the target, relevant obstacles, and information required for a safe and precise inspection operation.",
+  "scene": {
+    "navigation_inspection": {
+      "scene_navigable": true,
+      "direct_path_blocked": true,
+      "notes": "Synthetic scene annotations loaded from ground_truth.json.",
+      "perception_source": "synthetic_ground_truth"
+    },
+    "target": {
+      "label": "chair",
+      "bbox": [
+        85,
+        145,
+        155,
+        270
+      ],
+      "robot_xy": [
+        5.0,
+        4.0
+      ]
+    },
+    "obstacles": [
+      {
+        "label": "table",
+        "bbox": [
+          70,
+          150,
+          236,
+          376
+        ],
+        "robot_rect": [
+          2.0,
+          3.5,
+          1.0,
+          3.0
+        ],
+        "blocks_direct_path": true
+      }
+    ]
+  },
+  "target_3d": [
+    -4.0,
+    -0.66,
+    5.0
+  ],
+  "inspection_goal": [
+    4.219131190556969,
+    3.3753049524455756,
+    0.6747409422235525
+  ],
+  "waypoints": [
+    [
+      1.1,
+      0.09999999999999998,
+      0.0
+    ],
+    [
+      4.4,
+      0.09999999999999998,
+      0.0
+    ],
+    [
+      4.219131190556969,
+      3.3753049524455756,
+      0.6747409422235525
+    ]
+  ],
+  "obstacles": [
+    {
+      "label": "table",
+      "x_min": 1.85,
+      "x_max": 3.65,
+      "y_min": 0.85,
+      "y_max": 3.15
+    }
+  ],
+  "metrics": {
+    "inspection_goal_reached": true,
+    "waypoint_reached": true,
+    "navigation_time_s": 79.99999999999973,
+    "control_steps": 800,
+    "path_length_m": 8.933343476798376,
+    "final_position_error_m": 0.6962541589989689,
+    "final_heading_error_deg": 0.06103193988543577,
+    "minimum_obstacle_clearance_m": 1.17864572609711,
+    "collision_count": 0,
+    "average_abs_linear_velocity_m_s": 0.11166679345997965,
+    "maximum_abs_linear_velocity_m_s": 1.0,
+    "average_abs_angular_velocity_rad_s": 0.04665895118268537,
+    "maximum_abs_angular_velocity_rad_s": 1.0,
+    "average_nmpc_time_ms": 306.37888175071566,
+    "maximum_nmpc_time_ms": 983.2532000145875
+  }
+}
