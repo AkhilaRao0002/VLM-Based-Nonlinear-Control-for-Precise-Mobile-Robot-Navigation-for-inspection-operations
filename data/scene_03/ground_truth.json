@@ -1,0 +1,43 @@
+{
+  "camera": {
+    "width": 640,
+    "height": 480,
+    "fx": 250.0,
+    "fy": 250.0,
+    "cx": 320.0,
+    "cy": 240.0,
+    "depth_scale": 0.001
+  },
+  "task": "Navigate to the chair",
+  "target": {
+    "label": "chair",
+    "bbox": [
+      210,
+      127,
+      280,
+      252
+    ],
+    "robot_xy": [
+      6.0,
+      1.8
+    ]
+  },
+  "obstacles": [
+    {
+      "label": "table",
+      "bbox": [
+        124,
+        146,
+        280,
+        374
+      ],
+      "robot_rect": [
+        2.5,
+        4.0,
+        0.5,
+        2.5
+      ]
+    }
+  ],
+  "note": "Synthetic RGB-D scene for pipeline development. Ground truth is used only by synthetic_perception mode; real_vlm mode must infer detections from RGB."
+}
